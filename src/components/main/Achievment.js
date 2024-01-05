@@ -6,6 +6,90 @@ gsap.registerPlugin(ScrollTrigger)
 const Achievment = () => {
   
   useEffect(()=>{
+    gsap.to('.meter-1',{
+      width:'75%',
+      duration:1,
+      delay:0.2,
+      scrollTrigger:{
+        trigger:'.achieve-box-1',
+        scroller:'body',
+        start:'top 90%',
+      }
+    })
+    gsap.to('.meter-2',{
+      width:'45%',
+      duration:1,
+      delay:0.2,
+      scrollTrigger:{
+        trigger:'.achieve-box-2',
+        scroller:'body',
+        start:'top 90%',
+      }
+    })
+    gsap.to('.meter-3',{
+      width:'80%',
+      duration:1,
+      delay:0.2,
+      scrollTrigger:{
+        trigger:'.achieve-box-3',
+        scroller:'body',
+        start:'top 90%',
+      }
+    })
+    gsap.to('.meter-4',{
+      width:'70%',
+      duration:1,
+      delay:0.2,
+      scrollTrigger:{
+        trigger:'.achieve-box-4',
+        scroller:'body',
+        start:'top 90%',
+      }
+    })
+    gsap.to('.achieve-box-1 h4',{
+      opacity:'1',
+      translate:'0% 0%',
+      duration:0.6,
+      delay:0.1,
+      scrollTrigger:{
+        trigger:'.achieve-box-1',
+        scroller:'body',
+        start:'top 90%'
+      }
+    })
+    gsap.to('.achieve-box-2 h4',{
+      opacity:'1',
+      translate:'0% 0%',
+      duration:0.6,
+      delay:0.1,
+      scrollTrigger:{
+        trigger:'.achieve-box-2',
+        scroller:'body',
+        start:'top 90%'
+      }
+    })
+    gsap.to('.achieve-box-3 h4',{
+      opacity:'1',
+      translate:'0% 0%',
+      duration:0.6,
+      delay:0.1,
+      scrollTrigger:{
+        trigger:'.achieve-box-3',
+        scroller:'body',
+        start:'top 90%'
+      }
+    })
+    gsap.to('.achieve-box-4 h4',{
+      opacity:'1',
+      translate:'0% 0%',
+      duration:0.6,
+      delay:0.1,
+      scrollTrigger:{
+        trigger:'.achieve-box-4',
+        scroller:'body',
+        start:'top 90%'
+      }
+    })
 
     gsap.to('.gsap-fade-3',{
       translate:'0% 0%',
@@ -45,7 +129,7 @@ const Achievment = () => {
     </div>
     <h2 style={{fontSize:'24px',fontWeight:'700'}} className='text-center mb-4 py-1'>Our Projects</h2>
     <div className="row row-cols-1 row-cols-lg-2 mb-5 g-5">
-      <div className="col px-5">
+      <div className="col px-5 achieve-box-1">
         <div className='d-flex justify-content-between mb-3'>
           <h4>Painter</h4>
           <h4>155</h4>
@@ -54,7 +138,7 @@ const Achievment = () => {
             <div className="meter meter-1" ></div>
         </div>
       </div>
-      <div className="col px-5">
+      <div className="col px-5 achieve-box-2">
         <div className='d-flex justify-content-between mb-3'>
           <h4>Carpenter</h4>
           <h4>100</h4>
@@ -63,7 +147,7 @@ const Achievment = () => {
             <div className="meter meter-2" ></div>
         </div>
       </div>
-      <div className="col px-5">
+      <div className="col px-5 achieve-box-3">
         <div className='d-flex justify-content-between mb-3'>
           <h4>Plumber</h4>
           <h4>160</h4>
@@ -72,7 +156,7 @@ const Achievment = () => {
             <div className="meter meter-3" ></div>
         </div>
       </div>
-      <div className="col px-5">
+      <div className="col px-5 achieve-box-4">
         <div className='d-flex justify-content-between mb-3'>
           <h4>Electrical</h4>
           <h4>100</h4>

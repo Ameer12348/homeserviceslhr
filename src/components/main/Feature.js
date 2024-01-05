@@ -12,7 +12,7 @@ const Feature = () => {
        opacity:'1',
        delay:0.2,
        stagger:0.1,
-      duration:0.6,
+      duration:0.4,
       scrollTrigger:{
         trigger:'.feature-box',
         scroller:'body',

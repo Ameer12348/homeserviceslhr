@@ -22,27 +22,33 @@
     }
 
 }
+.achieve-box-1,.achieve-box-2,.achieve-box-3,.achieve-box-4{
+    h4{
+        opacity: 0;
+        translate: 0% -50%;
+    }
+}
 
 
 
 
 .meter-1{
-    width: 75% ;
+    width: 0%;
     height: 10px;
     background-color: #6dab3c;
 }
 .meter-2{
-    width: 45% ;
+    width: 0%;
     height: 10px;
     background-color: #fe6c61;
 }
 .meter-3{
-    width: 80% ;
+    width: 0%;
     height: 10px;
     background-color: #5472d2;
 }
 .meter-4{
-    width: 70% ;
+    width: 0%;
     height: 10px;
     background-color: #5472d2;
 }

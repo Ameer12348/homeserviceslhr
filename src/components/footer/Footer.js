@@ -16,7 +16,7 @@ const Footer = () => {
             opacity:'1',
             translate:'0% 0%',
             duration:0.6,
-            stagger:0.03,
+            stagger:0.01,
             scrollTrigger:{
                 trigger:'.footer-container',
                 scroller:'body',
