@@ -6,17 +6,29 @@ gsap.registerPlugin(ScrollTrigger)
 const Achievment = () => {
   
   useEffect(()=>{
+
     gsap.to('.gsap-fade-3',{
       translate:'0% 0%',
       opacity:'1',
       duration:0.6,
       delay:0.2,
-      stagger:0.2,
+      stagger:0.1,
       scrollTrigger:{
         trigger:'.trigger-1',
         scroller:'body',
-        markers:'true',
         start:'top 90%'
+      }
+    })
+    gsap.to('.gsap-fader-5',{
+      translate:'0% 0%',
+      opacity:'1',
+      duration:0.6,
+      stagger:0.2,
+      scrollTrigger:{
+        trigger:'.gsap-fader-5',
+        scroller:'body',
+        start:'top 85%'
+
       }
     })
     const metertimeline = gsap.timeline()
@@ -70,18 +82,18 @@ const Achievment = () => {
         </div>
       </div>
     </div>
-    <h2 className='text-center mt-5' style={{fontSize:"32px",fontWeight:"700"}}>Testimonials</h2>
-    <div className='mx-3 mx-sm-2 mb-5 position-relative' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> Servicemen came to visit to try and do a number of odd jobs and did nice work. fastened a window, a sink, associate degreed an electrical plug all for an inexpensive value. I glad along with his work and your services. Would positively use them once more </em></div>
-    <h4 className='mx-3 mx-sm-2 mb-5' style={{fontSize:"18px",fontWeight:'700'}}>Ghulam Ishaq</h4>
-    <div className='mx-3 mx-sm-2 mb-5 position-relative' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> I have used the services of your company on many occasions. Your servicemen measures continuously attractive, prompt and economical. The work performed has been excellent and as delineate. I even have confidence in recommending their services to anyone.</em></div>
-    <h4 className='mx-3 mx-sm-2 mb-5' style={{fontSize:"18px",fontWeight:'700'}}>Rashid Akhtar</h4>
-    <div className='mx-3 mx-sm-2 mb-5 position-relative' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> Your Servicemen have worked as expected. Even I come in the early morning or at night time they are available and do the work prompt and effective. they’re friendly and includes a careful form of work. I’m satisfied and advocate the alternative to use your services.</em></div>
-    <h4 className='mx-3 mx-sm-2 mb-5' style={{fontSize:"18px",fontWeight:'700'}}>Kiran</h4>
-    <h1 className='text-center mb-5 mx-4' style={{fontSize:'22px'}}>You can Book or Call us for Handyman Services in Lahore <br/>
+    <h2 className='text-center mt-5 gsap-fader-5' style={{fontSize:"32px",fontWeight:"700"}}>Testimonials</h2>
+    <div className='mx-3 mx-sm-2 mb-5 position-relative gsap-fader-5' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> Servicemen came to visit to try and do a number of odd jobs and did nice work. fastened a window, a sink, associate degreed an electrical plug all for an inexpensive value. I glad along with his work and your services. Would positively use them once more </em></div>
+    <h4 className='mx-3 mx-sm-2 mb-5 gsap-fader-5' style={{fontSize:"18px",fontWeight:'700'}}>Ghulam Ishaq</h4>
+    <div className='mx-3 mx-sm-2 mb-5 position-relative gsap-fader-5' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> I have used the services of your company on many occasions. Your servicemen measures continuously attractive, prompt and economical. The work performed has been excellent and as delineate. I even have confidence in recommending their services to anyone.</em></div>
+    <h4 className='mx-3 mx-sm-2 mb-5 gsap-fader-5' style={{fontSize:"18px",fontWeight:'700'}}>Rashid Akhtar</h4>
+    <div className='mx-3 mx-sm-2 mb-5 position-relative gsap-fader-5' style={{border:'3px solid #fbd232',padding:'30px 20px 30px 80px',fontSize:'18px',color:'rgba(51, 51, 51, 0.7)'}}><i className="fa-solid fa-quote-left position-absolute" style={{top:'10px',left:'20px',color:'#fbd232',fontSize:'50px'}}></i> <em> Your Servicemen have worked as expected. Even I come in the early morning or at night time they are available and do the work prompt and effective. they’re friendly and includes a careful form of work. I’m satisfied and advocate the alternative to use your services.</em></div>
+    <h4 className='mx-3 mx-sm-2 mb-5 gsap-fader-5' style={{fontSize:"18px",fontWeight:'700'}}>Kiran</h4>
+    <h1 className='text-center mb-5 mx-4 gsap-fader-5' style={{fontSize:'22px'}}>You can Book or Call us for Handyman Services in Lahore <br/>
     @ +923214707808</h1>
     <div className="row justify-content-center row-cols-sm-2 row-cols-1 mb-5">
-      <div className="col-sm-5 col-md-4 col-lg-3 py-2 px-5 px-sm-2"><button className='book-btn-1'>Book Now</button></div>
-      <div className="col-sm-5 col-md-4 col-lg-3 py-2 px-5 px-sm-2"><button className='book-btn-2'>Pricing</button></div>
+      <div className="col-sm-5 col-md-4 col-lg-3 py-2 px-5 px-sm-2"><button className='book-btn-1 gsap-fader-5'>Book Now</button></div>
+      <div className="col-sm-5 col-md-4 col-lg-3 py-2 px-5 px-sm-2"><button className='book-btn-2 gsap-fader-5'>Pricing</button></div>
     </div> 
 
     </div>

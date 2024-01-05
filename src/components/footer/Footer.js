@@ -1,12 +1,30 @@
-import React from 'react'
+import './Footer.scss'
+import React, { useEffect } from 'react'
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import gsap from 'gsap'
+gsap.registerPlugin(ScrollTrigger)
 
-import './Footer.scss'
+
 const Footer = () => {
+    useEffect(()=>{
+        gsap.to('.footer-container li',{
+            opacity:'1',
+            translate:'0% 0%',
+            duration:0.6,
+            stagger:0.03,
+            scrollTrigger:{
+                trigger:'.footer-container',
+                scroller:'body',
+                start:'top 90%'
+            }
+        })
+    },[])
+
   return (
     <div className='container-fluid p-0 m-0 footer-container'>
         <div className="container">
