@@ -115,7 +115,6 @@ const Achievment = () => {
 
       }
     })
-    const metertimeline = gsap.timeline()
   },[])
   
   return (
