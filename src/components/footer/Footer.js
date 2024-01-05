@@ -111,8 +111,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='py-xl-5 py-3 px-3' style={{backgroundColor:'#1d2637'}}>
-        <p className=' text-center' style={{fontSize:'14px',color:'#adb0b6'}}>Made with <FaHeart /> By: First Idea Web Development.</p>
+        <div className='py-xl-5 py-4 px-4' style={{backgroundColor:'#1d2637'}}>
+        <p className=' text-center m-0' style={{fontSize:'14px',color:'#adb0b6'}}>Made with <FaHeart /> By: First Idea Web Development.</p>
         </div>
 
     </div>
