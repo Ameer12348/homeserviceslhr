@@ -1,0 +1,51 @@
+.footer-container{
+    background: linear-gradient(#1d2737e6,#1d2737e6),url('https://hips.hearstapps.com/hmg-prod/images/close-up-of-tools-hanging-on-wall-royalty-free-image-760251967-1563391812.jpg?crop=1.00xw:0.502xh;0,0.0561xh&resize=1200:*') no-repeat center center / cover;
+}
+
+
+
+
+
+
+.footer-navigation{
+    background-color: #fbd232;
+    width: 600px !important;
+    padding-right: 0px;
+    position: absolute;
+    top: calc(100% - 30px);
+    left: 0px;
+    button:first-child{
+        &::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 120%;
+        left: 0px;
+        background-color: #fbd232;
+        clip-path: polygon(0 0, 0 100%, 100% 50%);
+        top: 0px;
+        z-index: 2;
+        }
+    }
+    button{
+        padding: 14px 15px 10px 30px;
+        background-color: #fbd232;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 120%;
+            left: 99%;
+            background-color: inherit;
+            clip-path: polygon(0 0, 0 100%, 100% 50%);
+            top: 0px;
+            z-index: 2;
+        }
+        &:hover{
+            background-color: black;
+            color: #fbd232;
+        }
+    }
+}

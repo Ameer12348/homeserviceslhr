@@ -1,0 +1,18 @@
+.gsap-fader{
+    opacity: 0;
+    translate: 0% -50%;
+}
+.top-nav-lists{
+    border: none;
+    a{
+        white-space: nowrap;
+    }
+}    
+
+@media (width>=1200px) {
+    .top-nav-lists{
+        border-left: 0.5px solid rgba(255,255,255,0.4);
+        border-right: 0.5px solid rgba(255,255,255,0.4);
+    }    
+
+}

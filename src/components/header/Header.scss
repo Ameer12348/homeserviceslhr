@@ -1,0 +1,307 @@
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+.gsap-fader-2{
+  opacity: 0;
+  translate: 0% -50%;
+}
+
+.input-search {
+  right: 70px;
+  width: 0px;
+  transition: all 0.1s;
+  padding: 2px 10px;
+  font-size: 15px;
+  height: 40px;
+  visibility: hidden;
+}
+@media (width <576px) {
+  .input-search{
+    width: 250px !important;
+    right: 50%;
+    top: 105%;
+    translate: 50%;
+    z-index: 6;
+  }
+  
+}
+
+.search-btn {
+  transition: all 0.1s;
+}
+
+
+@media (width>=1200px) {
+  .main-nav-container {
+    background-color: #fbd232;
+    color: white;
+  }
+  .nav-links-ul {
+    .current {
+      background-color: #1d2634;
+      a,
+      button {
+        color: white;
+      }
+    }
+    > .first-nav-li::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 20px;
+      background-color: #fbd232;
+      clip-path: polygon(0 0, 0 100%, 100% 50%);
+      height: 130%;
+    }
+    > li {
+      padding: 20px 15px 10px 30px;
+      position: relative;
+      background-color: #fbd232;
+      transition: all 0.1s;
+      font-weight: 700;
+      a {
+        color: #1d2634;
+        background-color: inherit;
+        font-size: 14px;
+      }
+      &:hover {
+        background-color: #1d2634;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .nav-links-ul > li::after {
+    content: "";
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    position: absolute;
+    left: 99%;
+    top: 0px;
+    width: 20px;
+    background-color: inherit;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+    height: 130%;
+  }
+}
+
+////////////////////////////////////////////////// making navlinks responsive //////////////////////////////////
+@media (width<1200px) {
+  .nav-links-ul {
+    
+    padding-top: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: white;
+    flex-direction: column;
+    z-index: 3;
+    width: 0px ;
+    visibility: hidden;
+    padding: 5px;
+    height: 100vh;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+    transition: all 0.4s;
+    a ,li{
+      color: black;
+      transition: all 0.4s;
+      &:hover{
+        color: #c29b00;
+      }
+    }
+    >li > a {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+     li:first-child {
+      margin-bottom: 10px;
+    }
+    > li {
+      padding: 10px 10px;
+      > ul li {
+        font-size: 15px;
+        padding: 10px 0px;
+
+        li {
+          padding: 10px 0px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .our-services-links {
+    margin-bottom: 30px;
+  }
+}
+
+///////////////////////////////// navigation sub links ////////////////////////////////
+@media (width >= 1200px) {
+  .our-services-links {
+    visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+    width: 1140px;
+    z-index: 2;
+    background-color: white;
+    left: -40%;
+    top: 100%;
+    padding: 0px;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    translate: 0px 10px;
+    > li > ul > li {
+      &:hover {
+        background-color: #fbd232;
+      }
+    }
+  }
+  .our-services-toggle:hover .our-services-links {
+    opacity: 1;
+    visibility: visible;
+    translate: 0px 0px;
+  }
+
+  .solar-panel-links {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 2;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    translate: 0px 10px;
+    width: 300px;
+    > li {
+      &:hover {
+        background-color: #fbd232;
+      }
+    }
+  }
+  .solar-panel-toggle:hover .solar-panel-links {
+    visibility: visible;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+
+  .about-us-links {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 2;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    translate: 0px 10px;
+    width: 300px;
+    > li {
+      &:hover {
+        background-color: #fbd232;
+      }
+    }
+  }
+  .about-us-toggle:hover .about-us-links {
+    visibility: visible;
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+
+//////////////// glide js ////////////////
+
+.glide__slide {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.glide .glide__slide {
+  h1 {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    translate: -50% -80%;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  p {
+    font-size: 48px;
+    position: absolute;
+    top: calc(20% + 50px);
+    left: 30%;
+    font-weight: 700;
+    translate: -50% -80%;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .btn {
+    position: absolute;
+    top: calc(20% + 125px);
+    left: 30%;
+    translate: -50% -80%;
+    font-size: 25px;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+
+@media (width<=850px) {
+  .glide .glide__slide {
+    height: 500px;
+    h1 {
+      font-size: 40px;
+      left: 40%;
+    }
+    p {
+      font-size: 38px;
+      left: 40%;
+    }
+    .btn {
+      font-size: 22px;
+      left: 40%;
+    }
+  }
+}
+@media (width<=576px) {
+  .glide .glide__slide {
+    height: 600px;
+    h1 {
+      font-size: 23px;
+      left: 50%;
+      top: 30%;
+    }
+    p {
+      font-size: 20px;
+      left: 50%;
+      top: calc(30% + 50px);
+    }
+    .btn {
+      font-size: 16px;
+      left: 50%;
+      top: calc(30% + 100px);
+    }
+  }
+}
+.glide .glide__slide--active {
+  h1,
+  p,
+  .btn {
+    opacity: 1;
+    translate: -50%;
+  }
+}

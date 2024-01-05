@@ -1,0 +1,52 @@
+.book-btn-1{
+    border: 2px solid gray;
+    padding: 10px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.669);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: #fbd232;
+        border-color:#fbd232 ;
+    }
+}
+.book-btn-2{
+    border: 2px solid gray;
+    padding: 10px;
+    width: 100%;
+    color: gray;
+    color: rgba(0, 0, 0, 0.669);
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: gray;
+        color: white;
+    }
+
+}
+
+
+
+
+.meter-1{
+    width: 75% ;
+    height: 10px;
+    background-color: #6dab3c;
+}
+.meter-2{
+    width: 45% ;
+    height: 10px;
+    background-color: #fe6c61;
+}
+.meter-3{
+    width: 80% ;
+    height: 10px;
+    background-color: #5472d2;
+}
+.meter-4{
+    width: 70% ;
+    height: 10px;
+    background-color: #5472d2;
+}
+.gsap-fade-3{
+    opacity: 0;
+    translate: 0% -50%;
+}
